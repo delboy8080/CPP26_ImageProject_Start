@@ -23,7 +23,7 @@ int main()
 
 
 
-    Font font("ARIAL.TTF");
+    Font font("../ARIAL.TTF");
 
     vector<Button*> buttons;
     buttons.push_back(new Button(font, {660, 20}, {120, 30}, "Reload", [&images, &selectedImage](){images[selectedImage]->reload();}));
