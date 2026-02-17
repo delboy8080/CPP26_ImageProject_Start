@@ -19,7 +19,7 @@ int main()
     loadImages(images);
     RenderWindow window(VideoMode(Vector2u(1000, 800)), "SFML works!");
     CircleShape shape(100.f);
-    MyImage *img = new MyImage("Images/boxes_1.ppm");
+    MyImage *img = new MyImage("../Images/boxes_1.ppm");
 
 
 
