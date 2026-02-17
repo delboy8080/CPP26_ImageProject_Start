@@ -86,7 +86,7 @@ void loadImages(vector<MyImage*> &images) {
     // http://en.cppreference.com/w/cpp/experimental/fs/directory_iterator
     const stdfs::directory_iterator end{} ;
 
-    for( stdfs::directory_iterator iter{"Images"} ; iter != end ; ++iter )
+    for( stdfs::directory_iterator iter{"../Images"} ; iter != end ; ++iter )
     {
         // http://en.cppreference.com/w/cpp/experimental/fs/is_regular_file
         if( stdfs::is_regular_file(*iter) ) // comment out if all names (names of directories tc.) are required
